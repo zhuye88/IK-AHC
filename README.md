@@ -11,17 +11,17 @@ A comparison of AHC and IK-AHC on a two dimensional dataset is shown below with 
 
 
 
-<img src="data.png" alt="plot" style="zoom:10%;" />
+<img src="data.png" alt="plot" width="100";" />
 
 <em>AHC with single linkage based on Euclidean distance:<em>
 
 
 
-<img src="ahc.png" alt="plot" style="zoom:10%;" />
+<img src="ahc.png" alt="plot" width="100";" />
 
 <em>AHC with single linkage based on Isolation Kernel:<em>
 
-<img src="kahc.png" alt="plot" style="zoom:10%;" />
+<img src="kahc.png" alt="plot" width="100";" />
 
 ---
 ## Citation
