@@ -38,7 +38,7 @@ for i = 1:len_data
 
     % Normalization
     data = dataset(i).data;
-    data = (data - min(data)) .* ((max(data) - min(data)).^ - 1);
+    data = (data - min(data)) .* ((max(data) - min(data)) .^ - 1);
     data(isnan(data)) = 0.5;
 
     %% evaluate isolation kernel
@@ -47,7 +47,7 @@ for i = 1:len_data
 
     for psi = psi_set
 
-        htoc_ik_Z = tahc_cluster(1-IsolationKernel(data, psi, 200, false), lk_func);
+        htoc_ik_Z = tahc_cluster(1 - IsolationKernel(data, psi, 200, false), lk_func);
         f1_score = max(f1_score, f1_tree(htoc_ik_Z, dataset(i).class, class_num));
         purity = max(purity, DenPurity(htoc_ik_Z, dataset(i).class));
 
